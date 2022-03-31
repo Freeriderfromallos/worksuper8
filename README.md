@@ -24,3 +24,4 @@ Things you may want to cover:
 * ...
 # ruby-testapp
 # super8
+# worksuper8
