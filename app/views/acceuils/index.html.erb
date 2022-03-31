@@ -2,6 +2,12 @@
 
 <h1>Acceuils</h1>
 
+<br>
+
+<%= link_to 'New Post !', new_acceuil_path %>
+
+<br>
+
 <table>
   <thead>
     <tr>
@@ -16,6 +22,7 @@
 
   <tbody>
     <% @acceuils.each do |acceuil| %>
+
       <tr>
         <td><%= acceuil.title %></td>
         <td><%= acceuil.text %></td>
@@ -31,5 +38,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Acceuil !', new_acceuil_path %>
