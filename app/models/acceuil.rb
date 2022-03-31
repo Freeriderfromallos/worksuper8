@@ -1,0 +1,2 @@
+class Acceuil < ApplicationRecord
+end

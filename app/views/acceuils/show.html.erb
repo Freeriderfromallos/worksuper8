@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @acceuil.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @acceuil.text %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @acceuil.photo %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @acceuil.author %>
+</p>
+
+<p>
+  <strong>Published at:</strong>
+  <%= @acceuil.published_at %>
+</p>
+
+<%= link_to 'Edit', edit_acceuil_path(@acceuil) %> |
+<%= link_to 'Back', acceuils_path %>

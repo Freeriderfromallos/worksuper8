@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Acceuils</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+      <th>Photo</th>
+      <th>Author</th>
+      <th>Published at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @acceuils.each do |acceuil| %>
+      <tr>
+        <td><%= acceuil.title %></td>
+        <td><%= acceuil.text %></td>
+        <td><%= acceuil.photo %></td>
+        <td><%= acceuil.author %></td>
+        <td><%= acceuil.published_at %></td>
+        <td><%= link_to 'Show', acceuil %></td>
+        <td><%= link_to 'Edit', edit_acceuil_path(acceuil) %></td>
+        <td><%= link_to 'Destroy', acceuil, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Acceuil', new_acceuil_path %>
