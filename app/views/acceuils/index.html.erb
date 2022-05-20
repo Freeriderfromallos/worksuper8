@@ -1,10 +1,12 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Acceuils</h1>
+<header>
+  <h1>Acceuils</h1>
+</header>
 
 <br>
 
 <%= link_to 'New Post !', new_acceuil_path %>
+
 
 <br>
 
@@ -28,6 +30,7 @@
         <br>
         <td><%= acceuil.text %></td>
         <td><%= acceuil.photo %></td>
+
         <td><%= acceuil.author %></td>
         <td><%= acceuil.published_at %></td>
         <td><%= link_to 'Show', acceuil %></td>
